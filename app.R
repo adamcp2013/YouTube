@@ -8,7 +8,7 @@ library(dplyr)
 library(rsconnect)
 
 #Load data
-youtube <- read_csv("/github/users/adamcp2013/YouTube/main/data/Global YouTube StatisticsSubset.csv")
+youtube <- read_csv("~/github/users/adamcp2013/YouTube/main/data/Global YouTube StatisticsSubset.csv")
 quartiles<-quantile(youtube$`video views`, probs = c(.25, .75))
 IQR<-IQR(youtube$`video views`)
 Lower<-quartiles[1]-1.5*IQR
