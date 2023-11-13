@@ -4,7 +4,8 @@
 library(shiny)
 library(ggplot2)
 library(readr)
-library(dplyr) 
+library(dplyr)
+library(rsconnect)
 
 #Load data
 youtube <- read_csv("C:/Users/adamp/Documents/myapp/data/Global YouTube StatisticsSubset.csv")
